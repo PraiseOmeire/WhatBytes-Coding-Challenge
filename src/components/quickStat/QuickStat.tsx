@@ -1,31 +1,31 @@
-import Image from "next/image";
-import {Statistics} from "../modal/StatUpdateModal";
+import Image from 'next/image';
+import { Statistics } from '../modal/StatUpdateModal';
 
 interface QuickStatisticsProps {
   statistics: Statistics;
 }
 
-const QuickStatistics: React.FC<QuickStatisticsProps> = ({statistics}) => {
+const QuickStatistics: React.FC<QuickStatisticsProps> = ({ statistics }) => {
   const totalScore = 15;
 
   const statData = [
     {
       id: 1,
-      image: "/trophy-image.svg",
+      image: '/trophy-image.svg',
       stat: statistics.rank,
-      text: "Your Rank",
+      text: 'Your Rank',
     },
     {
       id: 2,
-      image: "/percentile-image.svg",
+      image: '/percentile-image.svg',
       stat: statistics.percentile,
-      text: "Your Percentile",
+      text: 'Your Percentile',
     },
     {
       id: 3,
-      image: "/check-image.svg",
+      image: '/check-image.svg',
       stat: `${statistics.correctAnswers} / ${totalScore}`,
-      text: "Correct Answers",
+      text: 'Correct Answers',
     },
   ];
 
@@ -36,7 +36,7 @@ const QuickStatistics: React.FC<QuickStatisticsProps> = ({statistics}) => {
         {statData.map((field, index) => (
           <div
             className={`flex justify-between gap-2 ${
-              index !== statData.length - 1 ? "border-r" : ""
+              index !== statData.length - 1 ? 'border-r' : ''
             }`}
             key={field.id}
           >
@@ -46,12 +46,12 @@ const QuickStatistics: React.FC<QuickStatisticsProps> = ({statistics}) => {
                 width={10}
                 height={10}
                 alt="trophy"
-                className=" md:w-[20px] md:h-[20px] fill-current text-green-600 "
+                className=" md:w-5 md:h-5 fill-current text-green-600 "
               />
             </div>
 
             <div className="md:mr-2 mr-1">
-              <p className="md:text-1xl text-xs font-bold">{field.stat}</p>
+              <p className="md:text-xl text-xs font-bold">{field.stat}</p>
               <p className="uppercase md:text-sm text-[8px]">{field.text} </p>
             </div>
           </div>

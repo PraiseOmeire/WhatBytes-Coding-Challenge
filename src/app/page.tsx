@@ -1,6 +1,6 @@
-import Navbar from "@/components/navbar/Navbar";
-import Sidebar from "@/components/sidebar/Sidebar";
-import SkillTest from "@/components/skilltest/SkillTest";
+import Navbar from '@/components/navbar/Navbar';
+import Sidebar from '@/components/leftbar/Sidebar';
+import SkillTest from '@/components/skillsTest/SkillTest';
 
 const SkillTestPage = () => {
   return (

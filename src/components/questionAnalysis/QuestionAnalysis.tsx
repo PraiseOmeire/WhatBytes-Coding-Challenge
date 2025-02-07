@@ -1,23 +1,21 @@
-import {Pie} from "react-chartjs-2";
-import {Chart as ChartJS, ArcElement, Tooltip, Legend} from "chart.js";
+import { Pie } from 'react-chartjs-2';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 interface QuestionAnalysisProps {
   correctAnswers: number;
 }
 
-const QuestionAnalysis: React.FC<QuestionAnalysisProps> = ({
-  correctAnswers,
-}) => {
+const QuestionAnalysis: React.FC<QuestionAnalysisProps> = ({ correctAnswers }) => {
   const totalQuestions = 15;
   const incorrectAnswers = totalQuestions - correctAnswers;
 
   const data = {
-    labels: ["Correct", "Incorrect"],
+    labels: ['Correct', 'Incorrect'],
     datasets: [
       {
         data: [correctAnswers, incorrectAnswers],
-        backgroundColor: ["#36A2EB", "#FF6384"],
+        backgroundColor: ['#36A2EB', '#FF6384'],
       },
     ],
   };

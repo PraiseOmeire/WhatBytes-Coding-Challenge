@@ -1,11 +1,11 @@
-"use client";
-import {useState} from "react";
-import Modal from "../modal/StatUpdateModal";
-import QuickStatistics from "../quickStat/QuickStat";
-import ComparisonGraph from "../comparisonGraph/ComparisonGraph";
-import SyllabusAnalysis from "../syllabusAnalysis/SyllabusAnalysis";
-import QuestionAnalysis from "../questionAnalysis/QuestionAnalysis";
-import Image from "next/image";
+'use client';
+import { useState } from 'react';
+import Modal from '../modal/StatUpdateModal';
+import QuickStatistics from '../quickStat/QuickStat';
+import ComparisonGraph from '../comparisonGraph/ComparisonGraph';
+import SyllabusAnalysis from '../syllabusAnalysis/SyllabusAnalysis';
+import QuestionAnalysis from '../questionAnalysis/QuestionAnalysis';
+import Image from 'next/image';
 
 interface Statistics {
   rank: number;
@@ -50,8 +50,7 @@ const SkillTest: React.FC = () => {
                   Hyper Text Markup Language
                 </h3>
                 <p className="text-sm md:text-base">
-                  Questions: 08 | Duration: 15mins | Submitted on 5th of June
-                  2021
+                  Questions: 08 | Duration: 15mins | Submitted on 5th of June 2021
                 </p>
               </div>
               <div className="mt-3 w-auto">
