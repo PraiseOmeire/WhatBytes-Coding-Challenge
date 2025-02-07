@@ -1,5 +1,5 @@
 import Navbar from '@/components/navbar/Navbar';
-import Sidebar from '@/components/leftbar/Sidebar';
+import Sidebar from '@/components/sideBar/Sidebar';
 import SkillTest from '@/components/skillsTest/SkillTest';
 
 const SkillTestPage = () => {
